@@ -6,31 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculadora de Medeia Anaul</title>
+    <title>Calculadora de Média Anual</title>
 </head>
 
 <body>
     <script src="app.js"></script>
     <div class="container">
         <h1 class="page-title">
-            Calculadora de média Anual</h1>
+            Calculadora de Média Anual</h1>
         <p class="page-subtitle">
             Descubra qual a sua média de nota de todas as provas!
         </p>
-       
+
         <div>
             <br>
         </div>
         <main class="container-notas">
-            <input type="number" id="nota1" placeholder="Nota do 1° Bimestre">
-            <input type="number" id="nota2" placeholder="Nota do 2° Bimestre">
-            <input type="number" id="nota3" placeholder="Nota do 3° Bimestre">
-            <input type="number" id="nota4" placeholder="Nota do 4° Bimestre">
+            <input required type="number" id="nota1" placeholder="Nota do 1° Bimestre" min="0">
+            <input required type="number" id="nota2" placeholder="Nota do 2° Bimestre" min="0">
+            <input required type="number" id="nota3" placeholder="Nota do 3° Bimestre" min="0">
+            <input required type="number" id="nota4" placeholder="Nota do 4° Bimestre" min="0">
             <button type="submit" onclick="Media()">Media</button>
+
         </main>
         <p id="texto"></p>
         <p id="aprovado"></p>
-        
+
         <footer class="copy">
             <p>gus ©2022</p>
         </footer>
