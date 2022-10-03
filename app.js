@@ -12,9 +12,7 @@ function Media() {
     var exibir = document.getElementById("texto");
     var exibirNotaNaTela = "Sua média foi " + mediaFinal;
     exibir.innerHTML = exibirNotaNaTela;
-  
-    //var aprovado = 60;
-  
+
     if (mediaFinal >= 60) {
       var exibirApOuR = document.getElementById("aprovado");
       var exibirAprovadoNaTela = "Parabéns, você foi aprovado!!!";
@@ -25,10 +23,3 @@ function Media() {
       exibirReOuAp.innerHTML = exibirReprovado;
     }
   }
-  
-  /// else mediaFinal < aprovado;
-  //  var exibirReprovado = document.getElementById("aprovado");
-  //var exibirReprovadoNaTela = "Infelizmente Você foi reprovado";
-  //exibirReprovado.innerHTML = exibirReprovadoNaTela;
-  //}
-  
